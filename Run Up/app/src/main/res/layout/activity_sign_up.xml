@@ -1,0 +1,160 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.socard.Main.SignUpActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/toolbar"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/pad_40dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_marginTop="@dimen/pad_30dp"
+                android:id="@+id/user_name"
+                android:background="@drawable/text_border_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_username"
+                android:padding="@dimen/pad_10dp"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:hint="@string/username">
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtPasword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:hint="@string/password"
+                android:drawableLeft="@mipmap/ic_pwd"
+                android:inputType="textPassword" >
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:id="@+id/edit_confpass"
+                android:inputType="textPassword"
+                android:drawableLeft="@mipmap/ic_pwd"
+                android:hint="@string/confrim_password"
+                style="@style/txt_white"/>
+
+            <EditText
+                android:id="@+id/edtGivenName"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_email"
+                android:hint="@string/givenname" />
+            <EditText
+                android:id="@+id/edtEmail"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_email"
+                android:hint="@string/email_add"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/edtphonenumber"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_email"
+                android:hint="@string/phone"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/edtGender"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_username"
+                android:hint="@string/gender"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/edtBirth"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_username"
+                android:hint="@string/birth"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/edtMarital"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_username"
+                android:hint="@string/marital" />
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:background="@drawable/text_border_selector"
+                android:drawablePadding="@dimen/pad_10dp"
+                android:padding="@dimen/pad_10dp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/ic_username"
+                android:hint="@string/address" />
+
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                style="@style/MyButton"
+                android:layout_marginTop="@dimen/pad_50dp"
+                android:background="@drawable/button_selector"
+                android:text="Sign Up"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+

@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.socard.Main.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/pad_40dp"
+        android:paddingRight="@dimen/pad_40dp">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@mipmap/runup"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"/>
+
+
+        <com.socard.Widget.CustomEditText
+            android:layout_marginTop="60dp"
+            android:id="@+id/edtEmail"
+            android:background="@drawable/text_border_selector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/ic_username"
+            android:inputType="textEmailAddress"
+            android:padding="7dp"
+            android:textSize="16dp"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:hint="@string/email_add"
+            app:customFont="roboto_regular.ttf"/>
+
+
+        <com.socard.Widget.CustomEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_border_selector"
+            android:drawablePadding="@dimen/pad_10dp"
+            android:padding="7dp"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:hint="@string/password"
+            android:textSize="16dp"
+            android:drawableLeft="@mipmap/ic_pwd"
+            android:inputType="textPassword"
+            app:customFont="roboto_regular.ttf">
+        </com.socard.Widget.CustomEditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp">
+
+            <com.socard.Widget.CustomButton
+                android:id="@+id/btnLogin"
+                style="@style/MyButton"
+                android:layout_marginTop="@dimen/pad_20dp"
+                android:background="@drawable/button_selector"
+                android:text="@string/sign_in"
+                app:customFont="roboto_bold.ttf"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+

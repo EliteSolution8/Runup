@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/pad_10dp"
+    tools:context="com.socard.Main.SuccessActivity">
+
+    <com.socard.Widget.CustomTextView
+        android:id="@+id/txvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/pad_5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Title"
+        app:customFont="roboto_bold.ttf"/>
+
+    <ImageView
+        android:id="@+id/imgPost"
+        android:layout_width="128dp"
+        android:layout_height="128dp"/>
+    <com.socard.Widget.CustomTextView
+        android:id="@+id/txvName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/pad_5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Title"
+        app:customFont="roboto_regular.ttf"/>
+
+    <com.socard.Widget.CustomTextView
+        android:id="@+id/txvPhone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/pad_5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:autoLink="phone"
+        android:text="Title"
+        app:customFont="roboto_regular.ttf"/>
+    <com.socard.Widget.CustomTextView
+        android:id="@+id/txvWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/pad_5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Title"
+        app:customFont="roboto_regular.ttf"/>
+    <com.socard.Widget.CustomTextView
+        android:id="@+id/txvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="@dimen/pad_5dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:autoLink="email"
+        android:text="Title"
+        app:customFont="roboto_regular.ttf"/>
+
+
+</LinearLayout>
